@@ -19,3 +19,10 @@ export default createStackNavigator({
         }
     }
 );
+
+export const ROUTES = {
+    Home: 'Home',
+    Blog: 'Blog',
+    BlogDetails: 'BlogDetails',
+    Calculator: 'Calc'
+}

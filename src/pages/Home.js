@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, Button, StyleSheet } from 'react-native'
+import { ROUTES } from '../route'
 
 class Home extends React.Component {
     static navigationOptions = {
@@ -8,8 +9,11 @@ class Home extends React.Component {
   
       render() {
         return <View style={styles.home}>
-          <Button title='Calculadora' onPress={() => this.props.navigation.navigate('Calc')} />
-          <Button title='Blog' onPress={() => this.props.navigation.navigate('Blog')} />
+          <Button title='Calculadora' 
+                  onPress={() => this.props.navigation.navigate(ROUTES.Calculator)} />
+
+          <Button title='Blog' 
+                  onPress={() => this.props.navigation.navigate(ROUTES.Blog)} />
         </View>
     }
   }

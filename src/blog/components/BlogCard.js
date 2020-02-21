@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet, Button } from 'react-native'
 import { withNavigation } from 'react-navigation'
+import { ROUTES } from '../../route'
 
 const BlogCard = ({ post, navigation }) =>
     <View style={styles.card}>
@@ -9,7 +10,7 @@ const BlogCard = ({ post, navigation }) =>
             {post.body}
         </Text>
         <View style={styles.actions}>
-            <Button title='+ detalhes' onPress={() => navigation.navigate('BlogDetails', { postId: post.id })} />
+            <Button title='+ detalhes' onPress={() => navigation.navigate(ROUTES.BlogDetails, { postId: post.id })} />
         </View>
     </View>
 
