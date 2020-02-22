@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet, Button } from 'react-native'
 import { withNavigation } from 'react-navigation'
-import { ROUTES } from '../../route'
+import { ROUTES } from '../../routes/route'
 
 const BlogCard = ({ post, navigation }) =>
     <View style={styles.card}>

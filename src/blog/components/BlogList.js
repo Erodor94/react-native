@@ -11,7 +11,7 @@ const BlogList = () => {
         blogService.getPosts().then(response => {
             setPosts(response.data)
         })
-    })
+    }, [])
 
     const renderBlogCard = ({ item }) => {
         return <BlogCard post={item} />

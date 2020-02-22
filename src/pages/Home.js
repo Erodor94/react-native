@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Button, StyleSheet } from 'react-native'
-import { ROUTES } from '../route'
+import { ROUTES } from '../routes/route'
 
 class Home extends React.Component {
     static navigationOptions = {
@@ -14,6 +14,9 @@ class Home extends React.Component {
 
           <Button title='Blog' 
                   onPress={() => this.props.navigation.navigate(ROUTES.Blog)} />
+
+          <Button title='FAQ' 
+                  onPress={() => this.props.navigation.navigate(ROUTES.FAQ)} />
         </View>
     }
   }
